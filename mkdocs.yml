@@ -1,0 +1,23 @@
+site_name: Aida — User Guide
+site_description: User documentation for Aida clients
+docs_dir: docs
+theme:
+  name: material
+  language: fr
+  palette:
+    primary: blue
+
+plugins:
+  - search
+  - i18n:
+      default_language: fr
+      languages:
+        fr:
+          name: Français
+          build: true
+        en:
+          name: English
+          build: true
+
+nav:
+  - Home: index.md
