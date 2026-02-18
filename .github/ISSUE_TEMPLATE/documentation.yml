@@ -1,0 +1,25 @@
+name: Documentation Task
+description: New article, update, translation, fix, or restructuring
+labels: ["docs"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - New Article
+        - Update
+        - Translation
+        - Fix
+        - Structure
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Page / Section
+      description: Which page or section does this affect?
+  - type: textarea
+    attributes:
+      label: Description
+    validations:
+      required: true
