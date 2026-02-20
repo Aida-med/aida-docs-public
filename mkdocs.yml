@@ -3,20 +3,20 @@ site_description: User documentation for Aida clients
 docs_dir: docs
 theme:
   name: material
-  language: fr
+  language: en
   palette:
     primary: blue
 
 plugins:
   - search
   - i18n:
-      default_language: fr
       languages:
-        fr:
-          name: Français
-          build: true
-        en:
+        - locale: en
           name: English
+          build: true
+          default: true
+        - locale: fr
+          name: Français
           build: true
 
 nav:
